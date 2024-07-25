@@ -21,7 +21,12 @@ export const UserContextProvider: React.FC<PropsWithChildren> = ({ children }) =
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/auth/me").then((res) => {
+    fetch("/auth/me",{
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((res) => {
       if (!res.ok) {
         throw new Error(res.statusText);
       }
