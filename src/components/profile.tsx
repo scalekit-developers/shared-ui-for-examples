@@ -8,6 +8,9 @@ const Profile: React.FC = () => {
   const logout = () => {
     fetch('/auth/logout', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
     }).then((res) => {
       if (res.status === 200) {
         window.location.href = '/';
