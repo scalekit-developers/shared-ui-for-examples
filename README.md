@@ -1,46 +1,127 @@
-# Getting Started with Create React App
+<p align="left">
+  <a href="https://scalekit.com" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <img src="https://cdn.scalekit.cloud/v1/scalekit-logo-dark.svg" height="64">
+    </picture>
+  </a>
+  <br/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shared UI Components for Scalekit Examples
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-18+-blue?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+A collection of reusable React UI components designed for <a href="https://scalekit.com" target="_blank" rel="noopener noreferrer">Scalekit</a> example applications. These components demonstrate best practices for implementing authentication interfaces in the **auth stack for AI apps**.
 
-### `npm start`
+## 🎨 What's Included
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This shared UI library provides:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Login Components**: Pre-built authentication forms
+- **SSO Integration UI**: Enterprise login interfaces
+- **Profile Management**: User profile and settings components
+- **Agent Authorization**: UI for MCP consent flows
+- **Token Management**: Interfaces for managing user tokens
+- **Modern Design**: Clean, responsive components following design system
 
-### `npm test`
+## 🚀 Quick Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+```bash
+# Clone as a Git submodule in your project
+git submodule add https://github.com/scalekit-developers/shared-ui-for-examples.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Or clone directly
+git clone https://github.com/scalekit-developers/shared-ui-for-examples.git
+cd shared-ui-for-examples
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
+# or
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Development
 
-### `npm run eject`
+```bash
+# Start the development server
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Run tests
+npm test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Build for production
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📁 Component Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+├── components/
+│   ├── auth/           # Authentication components
+│   ├── profile/        # User profile components
+│   ├── tokens/         # Token management UI
+│   ├── common/         # Shared UI elements
+│   └── layouts/        # Page layouts
+├── hooks/              # Custom React hooks
+├── utils/              # Utility functions
+└── styles/             # Shared CSS/styling
+```
 
-## Learn More
+## 🔧 Available Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component | Description | Usage |
+|-----------|-------------|-------|
+| **LoginForm** | Enterprise SSO login interface | Authentication flows |
+| **ProfileCard** | User profile display | User management |
+| **TokenManager** | Token vault interface | Agent authorization |
+| **ConsentFlow** | MCP consent workflow | Agent permissions |
+| **OrgSelector** | Multi-tenant organization picker | Enterprise features |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔗 Integration with Example Apps
+
+This shared UI library is used by:
+
+- [**Express.js Example**](https://github.com/scalekit-developers/scalekit-express-example)
+- [**Next.js Demo**](https://github.com/scalekit-developers/scalekit-nextjs-demo)  
+- [**FastAPI Example**](https://github.com/scalekit-developers/scalekit-fastapi-example)
+- [**Spring Boot Example**](https://github.com/scalekit-developers/scalekit-springboot-example)
+- [**Go Example**](https://github.com/scalekit-developers/scalekit-go-example)
+
+## 🎯 Features Demonstrated
+
+- **Responsive Design**: Works across devices and screen sizes
+- **Accessibility**: WCAG compliant components
+- **Theme Support**: Light/dark mode compatibility
+- **TypeScript**: Full type safety and IntelliSense
+- **Modern React**: Hooks, Context API, and functional components
+- **Performance**: Optimized bundle size and loading
+
+## 🔗 Helpful Links
+
+### 📖 Quickstart Guides
+- [**SSO Integration**](https://docs.scalekit.com/sso/quickstart/) - Implement enterprise Single Sign-on
+- [**Full Stack Auth**](https://docs.scalekit.com/fsa/quickstart/) - Complete authentication solution
+- [**Passwordless Auth**](https://docs.scalekit.com/passwordless/quickstart/) - Modern authentication flows
+
+### 📚 Documentation & Reference
+- [**API Reference**](https://docs.scalekit.com/apis) - Complete API documentation
+- [**Developer Kit**](https://docs.scalekit.com/dev-kit/) - Tools and utilities
+
+## 🤝 Contributing
+
+We welcome contributions! Please:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-component`)
+3. Follow the existing component patterns
+4. Add tests for new components
+5. Submit a Pull Request
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
