@@ -13,7 +13,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of reusable React UI components designed for <a href="https://scalekit.com" target="_blank" rel="noopener noreferrer">Scalekit</a> example applications. These components demonstrate best practices for implementing authentication interfaces in the **auth stack for AI apps**.
+A collection of reusable React UI components designed for <a href="https://scalekit.com" target="_blank" rel="noopener noreferrer">Scalekit</a> example applications. These components demonstrate best practices for implementing authentication interfaces. Scalekit provides auth and actions on behalf of users, with 500+ connectors and 20,000+ tools.
 
 ## 🎨 What's Included
 
